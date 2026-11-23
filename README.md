@@ -1,7 +1,7 @@
 # Viry & Ángel · Invitación digital
 
 Invitación web para la boda de Viry & Ángel (23 de enero de 2027). Estética oscura con la paleta
-de la planner (carbón, borgoña, olivo y beige), tipografía Cormorant Garamond + Pinyon Script, y
+de la planner (carbón, borgoña, olivo y beige), tipografía Pinyon Script (títulos), Gilda Display (frases y subtítulos) y DM Sans (cuerpo), y
 una línea del tiempo interactiva de sus más de 16 años juntos.
 
 Todo el contenido vive en `src/data/invitation.ts`. Los pendientes de los novios están listados

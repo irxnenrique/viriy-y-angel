@@ -20,8 +20,10 @@ $text: rgba($beige, 0.78);
 $muted: rgba($beige, 0.55);
 $line: rgba($beige, 0.2);
 
-$font-sans: "Jost", "Helvetica Neue", Arial, sans-serif;
-$font-serif: "Cormorant Garamond", Georgia, serif;
+$font-sans: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+// Subtitles and highlighted phrases. Only ships a regular weight, no italic.
+$font-serif: "Gilda Display", Georgia, serif;
+// Titles.
 $font-script: "Pinyon Script", "Snell Roundhand", cursive;
 
 $font-size-body: 1rem;

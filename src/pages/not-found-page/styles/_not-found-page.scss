@@ -9,8 +9,8 @@
 
   h1 {
     max-width: 40rem;
-    font-size: clamp(2.4rem, 8vw, 4.5rem);
-    font-style: italic;
+    font-family: v.$font-script;
+    font-size: clamp(2.8rem, 10vw, 5rem);
   }
 
   a {

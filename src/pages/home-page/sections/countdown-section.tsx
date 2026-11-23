@@ -37,7 +37,10 @@ export function CountdownSection() {
 
   return (
     <section className="section countdown" id="fecha">
-      <SectionHeading kicker="Guarda la fecha" title={eventDateLabel} />
+      <SectionHeading kicker="Cuenta regresiva" title="Guarda la fecha" />
+      <Reveal from="fade" duration={1.2}>
+        <p className="countdown__date">{eventDateLabel}</p>
+      </Reveal>
 
       <Reveal from="fade" duration={1.2}>
         {remaining > 0 ? (
