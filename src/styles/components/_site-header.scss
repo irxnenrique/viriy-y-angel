@@ -1,0 +1,17 @@
+.site-header {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 20px;
+  z-index: 20;
+  padding: 12px;
+  background: white;
+  color: #34322f;
+}
+.skip-link:focus {
+  top: 12px;
+}

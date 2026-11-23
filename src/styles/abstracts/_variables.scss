@@ -1,0 +1,54 @@
+$paper: #faf9f6;
+$ink: #34322f;
+$primary: #5e5951;
+$secondary: #eeebe5;
+$surface: #ffffff;
+$surface-muted: #e8e3db;
+$line: rgba($ink, 0.28);
+$danger: #8a183b;
+$success: #176b4d;
+$white: #ffffff;
+
+$font-sans: "Montserrat", Arial, sans-serif;
+$font-display: "Cormorant Garamond", Georgia, serif;
+$font-size-body: 1rem;
+$font-size-label: 0.7rem;
+$font-size-meta: 0.75rem;
+$font-size-small: 0.875rem;
+$font-size-ui: 0.875rem;
+$font-size-heading: clamp(2.75rem, 7vw, 7rem);
+$font-size-title: clamp(4rem, 12vw, 11rem);
+
+$gutter: clamp(1.25rem, 3.3vw, 4rem);
+$content-max-width: 1800px;
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: clamp(3rem, 7vw, 7rem);
+$space-lg: clamp(5rem, 10vw, 11rem);
+$space-xl: clamp(7rem, 14vw, 15rem);
+
+$radius-sm: 0.25rem;
+$radius-md: 0.75rem;
+$radius-pill: 999px;
+$mobile-breakpoint: 800px;
+$tablet-breakpoint: 1100px;
+$transition-fast: 0.2s;
+$transition-base: 0.3s;
+$ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+@mixin mobile {
+  @media (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin focus-ring {
+  outline: 2px solid $primary;
+  outline-offset: 4px;
+}
