@@ -54,9 +54,9 @@ export function IntroCover({
 
       <div className="intro-cover__content">
         <div className="intro-cover__arch">
-          <svg viewBox="0 0 200 300" aria-hidden="true">
+          <svg viewBox="0 0 200 318" aria-hidden="true">
             <motion.path
-              d="M8 300 V104 A92 92 0 0 1 192 104 V300"
+              d="M8 300 V104 A92 92 0 0 1 192 104 V314"
               variants={{
                 hidden: { pathLength: 0, opacity: 0 },
                 shown: {
@@ -68,7 +68,7 @@ export function IntroCover({
               }}
             />
             <motion.path
-              d="M20 300 V108 A80 80 0 0 1 180 108 V300"
+              d="M20 300 V108 A80 80 0 0 1 180 108 V314"
               variants={{
                 hidden: { pathLength: 0, opacity: 0 },
                 shown: {

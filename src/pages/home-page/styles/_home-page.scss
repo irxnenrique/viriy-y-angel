@@ -157,7 +157,7 @@
 
       path {
         fill: none;
-        stroke: v.$beige;
+        stroke: v.$marfil;
         stroke-width: 1;
         vector-effect: non-scaling-stroke;
       }
@@ -182,6 +182,7 @@
   &__lettering {
     width: min(82vw, 24rem);
     margin-bottom: 1.1rem;
+    color: v.$marfil;
   }
 
   &__date {
@@ -189,7 +190,7 @@
     font-family: v.$font-serif;
     font-size: 1.15rem;
     letter-spacing: 0.3em;
-    color: v.$beige;
+    color: v.$marfil;
   }
 
   &__guest {
@@ -209,7 +210,7 @@
       font-family: v.$font-serif;
       font-size: 1.6rem;
       font-weight: 400;
-      color: v.$beige;
+      color: v.$marfil;
     }
 
     em {
