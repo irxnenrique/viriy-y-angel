@@ -1,8 +1,32 @@
-# maloba invitation draft
+# Viry & Ángel · Invitación digital
 
-Base project for independent digital invitations: XV celebrations, weddings, birthdays, baptisms,
-and other events. It includes an elegant reference design inspired by `xv-annia-valentina`: photographic cover,
-serif typography, neutral ivory, sand, and warm gray colors, countdown, itinerary, venue, and RSVP. All event data is illustrative.
+Invitación web para la boda de Viry & Ángel (23 de enero de 2027). Estética oscura con la paleta
+de la planner (carbón, borgoña, olivo y beige), tipografía Cormorant Garamond + Pinyon Script, y
+una línea del tiempo interactiva de sus más de 16 años juntos.
+
+Todo el contenido vive en `src/data/invitation.ts`. Los pendientes de los novios están listados
+al inicio de ese archivo y se muestran como "por confirmar" o se ocultan hasta tenerlos.
+
+## Invitaciones personalizadas
+
+Agrega a la URL el nombre y los lugares reservados:
+
+```text
+https://<dominio>/?n=Familia+López&p=4
+```
+
+`n` aparece en la portada y en la bienvenida, y prellena el formulario; `p` limita cuántas personas
+pueden confirmar.
+
+## Activar pendientes
+
+- **Horarios:** `time` en cada venue y `invitation.time` (cambia el calendario de "todo el día" a
+  evento con hora).
+- **Itinerario:** llenar `schedule`; la sección aparece sola.
+- **Confirmación:** `rsvp.phone` habilita el botón de WhatsApp.
+- **Música:** importar el audio en `src/assets/audio/` y asignarlo a `music`.
+- **Historia:** reemplazar `photo` y textos de cada capítulo en `story.chapters`; `years` controla
+  el contador.
 
 ## Technology
 

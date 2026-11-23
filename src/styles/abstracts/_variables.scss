@@ -1,54 +1,63 @@
-$paper: #faf9f6;
-$ink: #34322f;
-$primary: #5e5951;
-$secondary: #eeebe5;
-$surface: #ffffff;
-$surface-muted: #e8e3db;
-$line: rgba($ink, 0.28);
-$danger: #8a183b;
-$success: #176b4d;
-$white: #ffffff;
+// Wedding palette (moodboard shared with the planner). Dark backgrounds lead;
+// beige carries text and contrast.
+$beige: #e5d8c7;
+$carbon: #232027;
+$olivo: #635e43;
+$borgona: #2e0305;
+// Logo ink, a cooler ivory than the beige.
+$marfil: #ebe9e5;
 
-$font-sans: "Montserrat", Arial, sans-serif;
-$font-display: "Cormorant Garamond", Georgia, serif;
+// Derived shades.
+$noche: #19171c;
+$negro: #050505;
+$borgona-profundo: #1a0102;
+$borgona-luz: #5c1a1d;
+$olivo-claro: #a39c78;
+
+$paper: $carbon;
+$ink: $beige;
+$text: rgba($beige, 0.78);
+$muted: rgba($beige, 0.55);
+$line: rgba($beige, 0.2);
+
+$font-sans: "Jost", "Helvetica Neue", Arial, sans-serif;
+$font-serif: "Cormorant Garamond", Georgia, serif;
+$font-script: "Pinyon Script", "Snell Roundhand", cursive;
+
 $font-size-body: 1rem;
-$font-size-label: 0.7rem;
-$font-size-meta: 0.75rem;
-$font-size-small: 0.875rem;
-$font-size-ui: 0.875rem;
-$font-size-heading: clamp(2.75rem, 7vw, 7rem);
-$font-size-title: clamp(4rem, 12vw, 11rem);
+$font-size-label: 0.68rem;
+$font-size-small: 0.9rem;
 
-$gutter: clamp(1.25rem, 3.3vw, 4rem);
-$content-max-width: 1800px;
-$space-xs: 0.5rem;
+$content-width: 40rem;
+$gutter: 1.5rem;
 $space-sm: 1rem;
-$space-md: clamp(3rem, 7vw, 7rem);
-$space-lg: clamp(5rem, 10vw, 11rem);
-$space-xl: clamp(7rem, 14vw, 15rem);
+$space-md: 2.5rem;
+$space-lg: clamp(5rem, 14vw, 9rem);
 
 $radius-sm: 0.25rem;
-$radius-md: 0.75rem;
 $radius-pill: 999px;
-$mobile-breakpoint: 800px;
-$tablet-breakpoint: 1100px;
-$transition-fast: 0.2s;
+$mobile-breakpoint: 700px;
+$wide-breakpoint: 960px;
 $transition-base: 0.3s;
 $ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 
-@mixin mobile {
-  @media (max-width: $mobile-breakpoint) {
+@mixin desktop {
+  @media (min-width: $mobile-breakpoint) {
     @content;
   }
 }
 
-@mixin tablet {
-  @media (max-width: $tablet-breakpoint) {
+@mixin wide {
+  @media (min-width: $wide-breakpoint) {
     @content;
   }
+}
+
+@mixin borgona-section {
+  background: linear-gradient(180deg, $borgona 0%, $borgona-profundo 100%);
 }
 
 @mixin focus-ring {
-  outline: 2px solid $primary;
+  outline: 1px solid $beige;
   outline-offset: 4px;
 }

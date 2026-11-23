@@ -4,18 +4,21 @@
   display: grid;
   min-height: 100svh;
   place-content: center;
+  padding: v.$gutter;
   text-align: center;
 
   h1 {
-    max-width: 50rem;
-    font-size: v.$font-size-heading;
+    max-width: 40rem;
+    font-size: clamp(2.4rem, 8vw, 4.5rem);
+    font-style: italic;
   }
 
   a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: v.$space-xs;
+    gap: 0.5rem;
+    color: v.$beige;
 
     svg {
       width: 1rem;
